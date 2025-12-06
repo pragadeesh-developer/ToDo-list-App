@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  background:linear-gradient(90deg,#89f7fe, #66a6ff);
+  font-family: "Poppins", sans-serif;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.inputBox {
+  display: flex;
+  gap: 10px;
+}
+
+.inputBox input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  font-size: 16px;
+}
+
+.inputBox button {
+  padding: 12px 20px;
+  border: none;
+  background: #4A6CF7;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.inputBox button:hover {
+  background: #3d59d8;
+}
+
+.todoList {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.todoList li {
+  background: #eef2ff;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.todoList li .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.todoList li input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.todoList li span {
+  font-size: 16px;
+}
+
+.todoList li.completed {
+  background: #d3f8d3;
+}
+
+.todoList li.completed span {
+  text-decoration: line-through;
+  color: #2a6f2a;
+}
+
+.deleteBtn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.appreciation {
+  margin-top: 15px;
+  padding: 12px 15px;
+  background: #d1ffd1;
+  color: #236423;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 10px;
+  animation: pop 0.4s ease-out;
+  border: 2px solid #6fe26f;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.badge {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: linear-gradient(90deg, #ffd86b, #ffb200);
+  color: #643c00;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 12px;
+  border: 2px solid #ffce47;
+  animation: badgePop 0.6s ease-out;
+  box-shadow: 0 4px 10px rgba(255, 183, 0, 0.4);
+}
+
+@keyframes badgePop {
+  0% {
+    transform: scale(0.5) rotate(-10deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+}
